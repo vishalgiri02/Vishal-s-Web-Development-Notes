@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .parent div {
+            height: 600px;
+            width: 600px;
+            background-image: url("https://cdn.britannica.com/48/252748-050-C514EFDB/Virat-Kohli-India-celebrates-50th-century-Cricket-November-15-2023.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        @media (max-width720px) {
+            .parent div{
+                height: 200px;
+                width: 200px;
+                /*border-radius: 50%;*/
+                background-image: url("https://cdn.britannica.com/48/252748-050-C514EFDB/Virat-Kohli-India-celebrates-50th-century-Cricket-November-15-2023.jpg");
+            }
+        }
+        @media (max-width:543px) {
+            .parent div {
+                height: 200px;
+                width: 200px;
+                /*border-radius: 50%;*/
+                background-radius: url("1https://cdn.britannica.com/48/252748-050-C514EFDB/Virat-Kohli-India-celebrates-50th-century-Cricket-November-15-2023.jpg");
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="parent">
+    <div class="chilone"></div>
+    <div class="chiltwo"></div>
+    <div class="chilthree"></div>
+    <div class="chilfour"></div>
+    <div class="chilfive"></div>
+    <div class="chilsix"></div>
+   </div>
+    
+        
+</body>
+</html>

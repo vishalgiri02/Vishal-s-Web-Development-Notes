@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>  
+    <h1>Survey Form</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+        </div>
+        <div class="form-group">
+            <label for="role">Which option best describes your current role?</label>
+            <select id="role" name="role" required>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="developer">Developer</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>How likely is it that you would recommend freeCodeCamp to a friend?</label>
+            <br>
+            <input type="radio" id="maybe" name="recommend" value="definitely" required>
+            <label for="definitely">Definately</label>
+            <br>
+            <input type="radio" id="maybe" name="recommend" value="maybe">
+            <label for="maybe">Maybe</label>
+            <br>
+            <input type="radio" id="not-sure" name="recommend" value="not-sure">
+            <label for="not-sure">Not sure</label><br>
+            <label for="like">What do you like most in FCC?</label>
+            <select id="like" name="like" required>
+                <option value="front-end">Front-end Projects</option>
+                <option value="back-end">Back-end Projects</option>
+                <option value="dat-visulization">Data Visulization</option>
+            </select>
+            <br>
+            <label>Things that should be imroved in the future (Check all that apply):</label><br>
+            <input type="checkbox" id="front-end" name="improve" value="front-end">
+            <label for="front-end">Front-end Projects</label>
+            <br>
+            <input type="checkbox" id="back-end" name="improve" value="back-end">
+            <label for="back-end">Back-end Projects</label>
+            <br>
+            <input type="checkbox" id="data-visulization" name="improve" value="data-visulization">
+            <label for="data-visulization">Data Visulization</label>
+            <br>
+          <button type="submit">Submit</button>
+        </form>  
+ </body>
+</html>
